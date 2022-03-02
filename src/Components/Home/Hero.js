@@ -1,4 +1,4 @@
-import HeroImage from '../../Images/hero.png';
+import HeroImage from '../../Images/hero.webp';
 import React from 'react';
 import { Box, Heading, Image, Text, VStack, Stack } from '@chakra-ui/react';
 import { motion } from 'framer-motion';

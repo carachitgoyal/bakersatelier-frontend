@@ -8,7 +8,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import React, { useEffect } from 'react';
-import AboutImage from '../../Images/about.png';
+import AboutImage from '../../Images/about.webp';
 import { useAnimation, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 const MotionVStack = motion(VStack);
