@@ -69,7 +69,7 @@ const FeaturedItems = () => {
   const [ref, inView] = useInView();
   useEffect(() => {
     axios
-      .get('/api/v1/items/?featured=true')
+      .get('https://bakersatelier.herokuapp.com/api/v1/items/?featured=true')
       .then(res => {
         setData(res.data.getItems);
         console.log(data);

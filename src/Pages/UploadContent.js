@@ -56,7 +56,7 @@ const UploadContent = () => {
     setFeatured(false);
 
     axios
-      .post('/api/v1/items', databody)
+      .post('https://bakersatelier.herokuapp.com/api/v1/items', databody)
       .then(res => {
         console.log(res);
       })

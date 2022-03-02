@@ -20,6 +20,7 @@ const Card = ({ item }) => {
         />
         <Text
           isTruncated
+          maxW={{ base: '8rem' }}
           noOfLines={1}
           px={'2'}
           fontSize={{ base: 'md', md: 'xl' }}

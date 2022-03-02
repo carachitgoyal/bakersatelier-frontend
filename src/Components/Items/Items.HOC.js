@@ -5,7 +5,7 @@ const ItemsHOC = ({ heading, url }) => {
   return (
     <Container
       p="0"
-      pt={{ base: '0rem', lg: '7.5rem' }}
+      pt={{ base: '6rem', md: '7rem', lg: '7.5rem' }}
       maxW="9xl"
       w="full"
       m="0"
@@ -22,7 +22,12 @@ const ItemsHOC = ({ heading, url }) => {
         backgroundSize={'cover'}
         backgroundImage={url}
       >
-        <Text textShadow={'md'} fontSize={['4xl', '6xl', '8xl']} color="white">
+        <Text
+          textTransform={'capitalize'}
+          textShadow={'md'}
+          fontSize={['4xl', '6xl', '8xl']}
+          color="white"
+        >
           {heading}
         </Text>
       </Center>

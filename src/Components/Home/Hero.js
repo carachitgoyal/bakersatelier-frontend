@@ -1,14 +1,6 @@
 import HeroImage from '../../Images/hero.png';
 import React from 'react';
-import {
-  Box,
-  Heading,
-  Image,
-  Center,
-  Text,
-  VStack,
-  Stack,
-} from '@chakra-ui/react';
+import { Box, Heading, Image, Text, VStack, Stack } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 
 const MotionBox = motion(Box);
@@ -25,7 +17,7 @@ const Hero = () => {
     >
       <VStack
         zIndex={'1'}
-        p={{ base: '1rem 1rem 0rem 1rem', xl: '0rem 2rem 12rem 2rem' }}
+        p={{ base: '1rem 2rem 0rem 1rem', xl: '0rem 2rem 12rem 2rem' }}
         alignSelf="center"
         spacing={{ base: '1rem', md: '1.5rem', xl: '2rem' }}
         ml={{ base: 'auto', lg: '8rem' }}

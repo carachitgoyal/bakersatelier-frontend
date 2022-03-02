@@ -10,7 +10,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
@@ -55,7 +54,7 @@ const Navbar = () => {
         </Flex>
         <Flex
           maxW={{ base: '8rem', md: '8xl' }}
-          mx="auto"
+          mx={{ base: '0', md: 'auto' }}
           flex={{ base: 1 }}
           justify={{ base: 'center', md: 'space-between' }}
         >
@@ -233,6 +232,7 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'Items',
+    href: '/',
     children: [
       {
         label: 'Muffin',
@@ -257,25 +257,25 @@ const NAV_ITEMS = [
     children: [
       {
         label: 'Email',
-        href: '#',
+        href: '/',
       },
       {
         label: 'Instagram',
-        href: '#',
+        href: '/',
       },
       {
         label: 'Whatsapp',
-        href: '#',
+        href: '/',
       },
       {
         label: 'Zomato',
-        href: '#',
+        href: '/',
       },
     ],
   },
   {
     label: 'About',
-    href: '#',
+    href: '/',
   },
 ];
 export default Navbar;

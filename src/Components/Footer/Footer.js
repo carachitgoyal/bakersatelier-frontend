@@ -84,14 +84,14 @@ const Footer = () => {
           </HStack>
         </HStack>
       </VStack>
-      <VStack w={'full'}>
+      <VStack w={'full'} bg={'brand.lightBrown'} color="white">
         <Stack
           p="4rem 2rem"
           maxW="8xl"
           w="full"
           justify={'space-between'}
           direction={{ base: 'column', md: 'row' }}
-          color="brand.black"
+          // color="brand.black"
           fontSize={{ base: 'sm', md: 'xl' }}
           spacing="2rem"
         >
@@ -139,8 +139,8 @@ const Footer = () => {
           justify={'space-around'}
           align="center"
           direction={{ base: 'column', md: 'row' }}
-          color="brand.black"
-          bg={'gray.50'}
+          color="white"
+          bg={'brand.lightBrown'}
           fontSize="md"
         >
           <Text>Copyright @baker alters</Text>
