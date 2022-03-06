@@ -41,16 +41,6 @@ const AboutUs = () => {
         variants={variant}
         initial="hidden"
       >
-        <Heading fontSize={{ base: '4xl', md: '6xl' }} fontWeight="400">
-          About Us
-        </Heading>
-        <Text
-          maxW="36rem"
-          fontWeight={'300'}
-          fontSize={{ base: 'md', md: 'xl' }}
-        >
-          these are the featured items
-        </Text>
         <HStack
           overflow={'hidden'}
           maxW="8xl"
@@ -75,19 +65,19 @@ const AboutUs = () => {
             />
           </MotionBox>
           <VStack alignItems={'start'} pr="1rem">
-            <Text fontWeight="500" fontSize={{ base: 'sm', md: 'xl' }}>
-              They are baked specially for you
+            <Text fontWeight="500" fontSize={{ base: 'md', md: '3xl' }}>
+              About Us
             </Text>
             <Text
               maxW="36rem"
               fontWeight={'300'}
               fontSize={{ base: 'xs', md: 'md' }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id purus
-              in nulla eget scelerisque massa aliquam felis in. Sed nunc eget
-              phasellus ultricies massa, vitae sapien euismod viverra. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Id purus in
-              nulla eget scelerisque massa aliquam felis in.
+              We are the professional bakers situated in the heart of Chandigarh
+              providing delicious bakery items at your doorsteps ranging from
+              mini muffins & cakes to crunchy and crispy breads & savouries. We
+              are bakers by heart providing healthy baked products made without
+              any preservatives, artificial ingredients and no added gluten.
             </Text>
           </VStack>
         </HStack>

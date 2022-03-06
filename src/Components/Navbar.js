@@ -82,21 +82,19 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
             <PopoverTrigger>
-              <Link to="/">
-                <Box
-                  p={2}
-                  px="6"
-                  fontSize={'xl'}
-                  fontWeight={600}
-                  color={linkColor}
-                  _hover={{
-                    textDecoration: 'none',
-                    color: linkHoverColor,
-                  }}
-                >
-                  {navItem.label}
-                </Box>
-              </Link>
+              <Box
+                p={2}
+                px="6"
+                fontSize={'xl'}
+                fontWeight={600}
+                color={linkColor}
+                _hover={{
+                  textDecoration: 'none',
+                  color: linkHoverColor,
+                }}
+              >
+                {navItem.label}
+              </Box>
             </PopoverTrigger>
 
             {navItem.children && (
@@ -162,11 +160,7 @@ const DesktopSubNav = ({ label, href, subLabel }) => {
 
 const MobileNav = () => {
   return (
-    <Stack
-      bg={useColorModeValue('white', 'gray.800')}
-      p={4}
-      display={{ md: 'none' }}
-    >
+    <Stack bg='white' p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -179,42 +173,28 @@ const MobileNavItem = ({ label, children, href }) => {
 
   return (
     <Stack spacing={4} onClick={children && onToggle}>
-      <Link to={`${href}`}>
-        <Flex
-          py={2}
-          justify={'space-between'}
-          align={'center'}
-          _hover={{
-            textDecoration: 'none',
-          }}
-        >
-          <Text
-            fontWeight={600}
-            color={useColorModeValue('gray.600', 'gray.200')}
-          >
-            {label}
-          </Text>
-          {children && (
-            <Icon
-              as={BiChevronDown}
-              transition={'all .25s ease-in-out'}
-              transform={isOpen ? 'rotate(180deg)' : ''}
-              w={6}
-              h={6}
-            />
-          )}
-        </Flex>
-      </Link>
+      <Flex
+        py={2}
+        justify={'space-between'}
+        align={'center'}
+        _hover={{
+          textDecoration: 'none',
+        }}
+      >
+        <Text fontWeight={600}>{label}</Text>
+        {children && (
+          <Icon
+            as={BiChevronDown}
+            transition={'all .25s ease-in-out'}
+            transform={isOpen ? 'rotate(180deg)' : ''}
+            w={6}
+            h={6}
+          />
+        )}
+      </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: '0!important' }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
-          align={'start'}
-        >
+        <Stack mt={2} pl={4} borderStyle={'solid'} align={'start'}>
           {children &&
             children.map(child => (
               <Link to={`${child.href}`}>
@@ -232,7 +212,6 @@ const MobileNavItem = ({ label, children, href }) => {
 const NAV_ITEMS = [
   {
     label: 'Items',
-    href: '/',
     children: [
       {
         label: 'Muffin',
@@ -256,26 +235,22 @@ const NAV_ITEMS = [
     label: 'Contact',
     children: [
       {
-        label: 'Email',
-        href: '/',
-      },
-      {
         label: 'Instagram',
-        href: '/',
+        href: 'https://instagram.com/bakersatelier_chd?utm_medium=copy_link',
       },
       {
         label: 'Whatsapp',
-        href: '/',
+        href: 'https://api.whatsapp.com/send/?phone=919780928001&text&app_absent=0',
       },
       {
         label: 'Zomato',
-        href: '/',
+        href: 'https://zoma.to/order/20129304',
+      },
+      {
+        label: 'Google',
+        href: 'https://business.google.com/v/bakers-atelier-by-shruti/017440765892640493492/a5cd/_?caid=16032994729&agid=141268333588&gclid=Cj0KCQiA3rKQBhCNARIsACUEW_YQpX2aobv8eAr2A4eByBPlaIz_2_qmYlycEjj6ZFTnQW5E2U3gXnUaAi8REALw_wcB',
       },
     ],
-  },
-  {
-    label: 'About',
-    href: '/',
   },
 ];
 export default Navbar;

@@ -25,7 +25,7 @@ const ItemsHOC = ({ heading, url }) => {
         <Text
           textTransform={'capitalize'}
           textShadow={'md'}
-          fontSize={['4xl', '6xl', '8xl']}
+          fontSize={['7xl', '7xl', '8xl']}
           color="white"
         >
           {heading}

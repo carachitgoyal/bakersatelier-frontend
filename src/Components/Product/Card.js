@@ -1,7 +1,15 @@
-import { Box, HStack, Image, Text, VStack, Center } from '@chakra-ui/react';
+import {
+  Box,
+  HStack,
+  Image,
+  Text,
+  VStack,
+  Center,
+  Skeleton,
+} from '@chakra-ui/react';
 
 const Card = ({ item }) => {
-  console.log('item - ', item);
+  console.log(item.length < 0);
   return (
     <Center>
       <VStack
@@ -20,7 +28,7 @@ const Card = ({ item }) => {
         />
         <Text
           isTruncated
-          maxW={{ base: '8rem' }}
+          maxW={{ base: '8rem', md:'16rem' }}
           noOfLines={1}
           px={'2'}
           fontSize={{ base: 'md', md: 'xl' }}
@@ -35,7 +43,11 @@ const Card = ({ item }) => {
           fontSize={{ base: 'sm', md: 'md' }}
         >
           <Text>₹ {item.price}</Text>
-          <Box as="button" _hover={{ color: 'black' }}>
+          <Box
+            as="a"
+            href="https://api.whatsapp.com/send/?phone=919780928001&text&app_absent=0"
+            _hover={{ color: 'black' }}
+          >
             Buy Now
           </Box>
         </HStack>

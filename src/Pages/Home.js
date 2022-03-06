@@ -7,7 +7,12 @@ import Hero from '../Components/Home/Hero';
 
 const Home = () => {
   return (
-    <Container maxW="9xl" p="0" m="0" pt={{ base: '8rem', md: '0' }}>
+    <Container
+      maxW="9xl"
+      p="0"
+      m="0"
+      pt={{ base: '8rem', md: '10rem', lg: '0' }}
+    >
       <Hero />
       <FeaturedItems />
       <AboutUs />

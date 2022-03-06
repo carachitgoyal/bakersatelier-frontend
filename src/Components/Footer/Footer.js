@@ -9,6 +9,7 @@ import {
   VStack,
 } from '@chakra-ui/react';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import RopeImg from '../../Images/rope.png';
 
 const Footer = () => {
@@ -95,40 +96,44 @@ const Footer = () => {
           fontSize={{ base: 'sm', md: 'xl' }}
           spacing="2rem"
         >
-          <VStack spacing={{ base: '1rem', md: '2rem' }} alignItems={'start'}>
-            <Heading fontWeight={'400'} fontSize={{ base: '2xl', md: '3xl' }}>
-              Keep In Touch
-            </Heading>
+          <VStack
+            fontWeight={'500'}
+            spacing={{ base: '1rem', md: '1.5rem' }}
+            alignItems={'start'}
+          >
+            <Text fontSize={{ base: '2xl', md: '3xl' }}>Keep In Touch</Text>
             <VStack alignItems={'start'}>
-              <Text>
-                #3317, Sector 19D, <br /> Chandigarh
-              </Text>
-              <Text>phone Number</Text>
-              <Text>Email</Text>
+              <Text>#3317, Sector 19D, Chandigarh</Text>
+              <Text>Phone Number - 9780928001</Text>
+              <Text>Email - bakersatelier.chd@gmail.com</Text>
             </VStack>
           </VStack>
           <Stack
             spacing={{ base: '2rem', md: '6rem' }}
             direction={{ base: 'column', md: 'row' }}
           >
-            <VStack spacing={{ base: '1rem', md: '2rem' }} alignItems={'start'}>
-              <Heading fontWeight={'400'} fontSize={{ base: '2xl', md: '3xl' }}>
-                Products
-              </Heading>
+            <VStack
+              fontWeight={'500'}
+              spacing={{ base: '1rem', md: '1.5rem' }}
+              alignItems={'start'}
+            >
+              <Text fontSize={{ base: '2xl', md: '3xl' }}>Products</Text>
               <VStack alignItems={'start'}>
-                <Text>Cakes</Text>
-                <Text>Breads</Text>
-                <Text>Buns</Text>
-                <Text>Biscuits</Text>
+                <Link to="/muffins">Muffins</Link>
+                <Link to="/breads">Breads</Link>
+                <Link to="/cakes">Cakes</Link>
+                <Link to="/savouries">Savouries</Link>
               </VStack>
             </VStack>
-            <VStack spacing={{ base: '1rem', md: '2rem' }} alignItems={'start'}>
-              <Heading fontWeight={'400'} fontSize={{ base: '2xl', md: '3xl' }}>
-                Information
-              </Heading>
+            <VStack
+              fontWeight={'500'}
+              spacing={{ base: '1rem', md: '1.5rem' }}
+              alignItems={'start'}
+            >
+              <Text fontSize={{ base: '2xl', md: '3xl' }}>Information</Text>
               <VStack alignItems={'start'}>
-                <Text>About</Text>
-                <Text>Contact</Text>
+                <Text>About Us</Text>
+                <Text>Contact Us</Text>
               </VStack>
             </VStack>
           </Stack>
@@ -143,7 +148,7 @@ const Footer = () => {
           bg={'brand.lightBrown'}
           fontSize="md"
         >
-          <Text>Copyright @baker alters</Text>
+          <Text>FSAAI Registration No. - 23022002000007</Text>
           <a href="https://irfanasif.me" target="_blank" rel="noreferrer">
             <Text _hover={{ color: '#E99452' }}>Developed By Irfan Asif</Text>
           </a>

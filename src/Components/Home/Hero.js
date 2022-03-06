@@ -71,7 +71,8 @@ const Hero = () => {
           display="flex"
         >
           <Box
-            as="button"
+            as="a"
+            href="https://api.whatsapp.com/send/?phone=919780928001&text&app_absent=0"
             bg="brand.brown"
             color="white"
             p="0.8rem 1.6rem"
