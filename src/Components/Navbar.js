@@ -72,10 +72,6 @@ const Navbar = () => {
 };
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200');
-  const linkHoverColor = useColorModeValue('gray.800', 'white');
-  const popoverContentBgColor = useColorModeValue('white', 'gray.800');
-
   return (
     <Stack direction={'row'} spacing={4}>
       {NAV_ITEMS.map(navItem => (
@@ -87,10 +83,10 @@ const DesktopNav = () => {
                 px="6"
                 fontSize={'xl'}
                 fontWeight={600}
-                color={linkColor}
+                color="brand.black"
                 _hover={{
                   textDecoration: 'none',
-                  color: linkHoverColor,
+                  color: 'brand.brown',
                 }}
               >
                 {navItem.label}
@@ -101,7 +97,7 @@ const DesktopNav = () => {
               <PopoverContent
                 border={0}
                 boxShadow={'xl'}
-                bg={popoverContentBgColor}
+                bg="white"
                 p={4}
                 rounded={'xl'}
                 minW={'xs'}
@@ -122,7 +118,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href }) => {
   return (
-    <Link to={`${href}`}>
+    <a href={`${href}`}>
       <Box
         role={'group'}
         display={'block'}
@@ -154,13 +150,13 @@ const DesktopSubNav = ({ label, href }) => {
           </Flex>
         </Stack>
       </Box>
-    </Link>
+    </a>
   );
 };
 
 const MobileNav = () => {
   return (
-    <Stack bg='white' p={4} display={{ md: 'none' }}>
+    <Stack bg="white" p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -168,7 +164,7 @@ const MobileNav = () => {
   );
 };
 
-const MobileNavItem = ({ label, children, href }) => {
+const MobileNavItem = ({ label, children }) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
@@ -197,11 +193,11 @@ const MobileNavItem = ({ label, children, href }) => {
         <Stack mt={2} pl={4} borderStyle={'solid'} align={'start'}>
           {children &&
             children.map(child => (
-              <Link to={`${child.href}`}>
+              <a href={`${child.href}`}>
                 <Box key={child.label} py={2}>
                   {child.label}
                 </Box>
-              </Link>
+              </a>
             ))}
         </Stack>
       </Collapse>

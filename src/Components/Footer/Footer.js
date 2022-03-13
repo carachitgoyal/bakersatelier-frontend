@@ -45,7 +45,7 @@ const Footer = () => {
             <a
               href="https://zoma.to/r/20129304"
               target="_blank"
-              rel="preferrers"
+              rel="preferrers noreferrer"
             >
               <Center w={['4rem', '6rem', '8rem', '10rem']}>
                 <svg
@@ -102,9 +102,23 @@ const Footer = () => {
           >
             <Text fontSize={{ base: '2xl', md: '3xl' }}>Baker's Atelier</Text>
             <VStack alignItems={'start'}>
-              <Text>#3317, Sector 19D, Chandigarh</Text>
+              <a
+                href="https://maps.app.goo.gl/6o7NP7xb96p258cy8"
+                target={'_blank'}
+                rel="noreferrer"
+              >
+                <Text>#3317, Sector 19D, Chandigarh</Text>
+              </a>
               <Text>Phone Number - 9780928001</Text>
-              <Text>Email - bakersatelier.chd@gmail.com</Text>
+              <Link
+                to="#"
+                onClick={e => {
+                  window.location.href = 'mailto:bakersatelier.chd@gmail.com';
+                  e.preventDefault();
+                }}
+              >
+                <Text>Email - bakersatelier.chd@gmail.com</Text>
+              </Link>
             </VStack>
           </VStack>
           <Stack
