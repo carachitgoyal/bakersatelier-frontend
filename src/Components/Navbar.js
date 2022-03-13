@@ -120,7 +120,7 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ label, href, subLabel }) => {
+const DesktopSubNav = ({ label, href }) => {
   return (
     <Link to={`${href}`}>
       <Box

@@ -5,11 +5,9 @@ import {
   Text,
   VStack,
   Center,
-  Skeleton,
 } from '@chakra-ui/react';
 
 const Card = ({ item }) => {
-  console.log(item.length < 0);
   return (
     <Center>
       <VStack

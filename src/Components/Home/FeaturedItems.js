@@ -2,11 +2,8 @@ import {
   Box,
   Container,
   Heading,
-  HStack,
-  Image,
   Text,
   VStack,
-  Center,
 } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
@@ -72,7 +69,6 @@ const FeaturedItems = () => {
       .get('https://bakersatelier.herokuapp.com/api/v1/items/?featured=true')
       .then(res => {
         setData(res.data.getItems);
-        console.log(data);
       })
       .catch(err => console.log(err));
   }, []);

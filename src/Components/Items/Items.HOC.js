@@ -1,4 +1,4 @@
-import { Box, Center, Container, Heading, Image, Text } from '@chakra-ui/react';
+import { Center, Container, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const ItemsHOC = ({ heading, url }) => {

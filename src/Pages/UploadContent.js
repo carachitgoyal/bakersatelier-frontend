@@ -48,7 +48,6 @@ const UploadContent = () => {
       category: category,
       featured: featured,
     };
-    console.log(databody);
     setTitle('');
     setUrl('');
     setPrice('');
@@ -58,7 +57,7 @@ const UploadContent = () => {
     axios
       .post('https://bakersatelier.herokuapp.com/api/v1/items', databody)
       .then(res => {
-        console.log(res);
+        // console.log(res);
       })
       .catch(err => console.log(err));
   };

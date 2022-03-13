@@ -1,7 +1,6 @@
 import {
   Box,
   Container,
-  Heading,
   HStack,
   Image,
   Text,

@@ -52,13 +52,7 @@ const Categories = () => {
           <Heading fontSize={{ base: '4xl', md: '6xl' }} fontWeight="400">
             Categories
           </Heading>
-          <Text
-            maxW="36rem"
-            fontWeight={'300'}
-            fontSize={{ base: 'md', md: 'xl' }}
-          >
-            these are the Categories
-          </Text>
+
           <MotionBox
             animate={controls}
             variants={variantBox}

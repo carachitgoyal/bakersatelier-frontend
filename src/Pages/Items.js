@@ -1,12 +1,6 @@
 import {
   Center,
   Container,
-  Heading,
-  Skeleton,
-  SkeletonText,
-  Stack,
-  Text,
-  VStack,
   Wrap,
 } from '@chakra-ui/react';
 import axios from 'axios';
@@ -27,7 +21,6 @@ const Items = () => {
         `https://bakersatelier.herokuapp.com/api/v1/items/?category=${category}`
       )
       .then(res => {
-        console.log(res.data.getItems);
         setData(res.data.getItems);
       })
       .catch(err => console.log(err));
