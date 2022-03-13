@@ -101,7 +101,7 @@ const Footer = () => {
             spacing={{ base: '1rem', md: '1.5rem' }}
             alignItems={'start'}
           >
-            <Text fontSize={{ base: '2xl', md: '3xl' }}>Keep In Touch</Text>
+            <Text fontSize={{ base: '2xl', md: '3xl' }}>Baker's Atelier</Text>
             <VStack alignItems={'start'}>
               <Text>#3317, Sector 19D, Chandigarh</Text>
               <Text>Phone Number - 9780928001</Text>

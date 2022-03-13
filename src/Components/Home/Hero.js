@@ -56,9 +56,16 @@ const Hero = () => {
             fontWeight={'300'}
             fontSize={{ base: 'md', md: 'xl' }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nisi
-            iure atque, nemo dolorem eius excepturi deleniti molestias earum
-            iusto
+            Striving hard to provide you fresh and high quality baked food.
+          </Text>
+          <Text
+            maxW="36rem"
+            pb="1rem"
+            color={'brand.lightBrown'}
+            fontWeight={'300'}
+            fontSize={{ base: 'md', md: 'xl' }}
+          >
+            Delivery Time : Within 24 Hours of Booking
           </Text>
         </MotionBox>
         <MotionBox

@@ -85,18 +85,12 @@ const FeaturedItems = () => {
 
   return (
     <Container my="4rem">
-      <VStack  gap="4rem">
+      <VStack gap="4rem">
         <MotionVStack animate={controls} variants={variant} initial="hidden">
           <Heading fontSize={{ base: '4xl', md: '6xl' }} fontWeight="400">
             Featured Items
           </Heading>
-          <Text
-            maxW="36rem"
-            fontWeight={'300'}
-            fontSize={{ base: 'md', md: 'xl' }}
-          >
-            these are the featured items
-          </Text>
+
           <MotionBox
             ref={ref}
             animate={controls}

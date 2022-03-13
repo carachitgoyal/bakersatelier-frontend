@@ -81,9 +81,9 @@ const Categories = () => {
                   <Image
                     maxW={{ base: '2rem', md: '4rem' }}
                     src={PuffinImg}
-                    alt={'Puffin'}
+                    alt={'Muffins'}
                   />
-                  <Text fontSize={{ base: 'md', md: '2xl' }}>Puffins</Text>
+                  <Text fontSize={{ base: 'md', md: '2xl' }}>Muffins</Text>
                 </Center>
               </Link>
               <Link to="/breads">
